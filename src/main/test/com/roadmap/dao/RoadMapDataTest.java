@@ -6,12 +6,11 @@ import org.junit.Test;
 import java.util.Map;
 import java.util.Set;
 
-import static org.junit.Assert.*;
 
 public class RoadMapDataTest extends TestCase {
 
     @Test
-    public void getConnectedCities() {
+   public void testGetConnectedCities() {
         RoadMapData roadMapData = RoadMapData.getInstance();
         Map<String, Set<String>> cities = roadMapData.getConnectedCities();
         assertNotNull("Could not able to Load City List",cities);
